@@ -1,0 +1,132 @@
+.order-cards{
+    margin: 0.5rem 0rem 0 18rem;
+    width: 47rem;
+    max-width: 60%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 0.8rem;
+}
+
+@media(max-width: 1489px) {
+    .order-cards {
+        grid-template-columns: 1fr 1fr;
+        max-width: 40%;
+    }
+}
+
+@media(max-width: 1337px) {
+    .order-cards {
+        max-width: 70%;
+    }
+}
+
+@media(max-width: 1065px) {
+    .order-cards {
+        margin-left: 4rem;
+        max-width: 75%;
+    }
+}
+
+@media(max-width: 1065px) {
+    .order-cards {
+        margin-top: 1.5rem;
+    }
+}
+
+@media (max-width: 481px) {
+    .order-cards {
+        margin-top: 1.6rem;
+        grid-template-columns: 1fr;
+    }
+}
+
+@media(max-width: 393px) {
+    .order-cards {
+        margin-top: 3.2rem;
+    }
+}
+
+@media(max-width: 393px) {
+    .order-cards {
+        margin-top: 3.9rem;
+    }
+}
+
+.card {
+    /* border: 1px solid blue; */
+    display: flex;
+    flex-direction: column;
+    gap: 1.9rem;
+    padding: 15px 14px 20px 14px;
+    border-radius: 17px;
+    border: 1px solid #d8d7d7;
+}
+
+.card-head {
+    display: flex;
+    justify-content: space-between;
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.icon {
+    font-size: 21.5px;
+}
+
+.shirt-icon {
+    color: rgb(147, 154, 13);
+}
+
+.cap-icon {
+    color: #2394ed;
+}
+
+.card-processing {
+    box-shadow: -5px 0px 1px rgb(250,173,65);
+}
+
+.card-ready-to-deliver {
+    box-shadow: -5px 0px 1px rgb(45,206,138);
+}
+
+.card-delivered {
+    box-shadow: -5px 0px 1px rgb(0,131,255);
+}
+
+.card-cancelled {
+    box-shadow: -5px 0px 1px rgb(243,54,92);
+}
+.card-pending {
+    box-shadow: -5px 0px 1px rgb(130,146,170);
+}
+
+.card-processing:hover{
+    background-color: rgb(255, 239, 218);
+    box-shadow: -5px 5px 1px rgb(250,173,65);
+    scale: 1.02;
+}
+
+.card-ready-to-deliver:hover{
+    background-color: rgb(217, 253, 238);
+    box-shadow: -5px 5px 1px rgb(45,206,138);
+    scale: 1.02;
+}
+
+.card-delivered:hover{
+    background-color: rgb(207, 231, 254);
+    box-shadow: -5px 5px 1px rgb(0,131,255);
+    scale: 1.02;
+}
+
+.card-cancelled:hover{
+    background-color: rgb(251, 222, 227);
+    box-shadow: -5px 5px 1px rgb(243,54,92);
+    scale: 1.02;
+}
+
+.card-pending:hover{
+    background-color: rgb(219, 232, 253);
+    box-shadow: -5px 5px 1px rgb(130,146,170);
+    scale: 1.02;
+}
+

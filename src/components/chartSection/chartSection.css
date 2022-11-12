@@ -1,0 +1,39 @@
+.chart-block {
+    /* border: 1px solid green; */
+    background-color: #fff;
+    max-width: 60%;
+    width: 28%;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    position: absolute;
+    right: 1.5rem;
+    top: 11.5rem;
+    border-radius: 17px;
+    padding: 8px 0 25px 0;
+}
+
+.chart-heading {
+    font-weight: 700;
+    text-align: center;
+}
+
+@media(max-width: 1337px) {
+    .chart-block {
+        position: relative;
+        top: 1rem;
+        right: 0;
+        left: 26rem;
+    }
+}
+
+@media (max-width: 1065px) {
+    .chart-block {
+        width: 70vw;
+        max-width: 70vw;
+        left: 2.95rem;
+    }
+}
